@@ -169,9 +169,9 @@ header {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-  }
+}
   
-  .info-button {
+.info-button {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -183,15 +183,27 @@ header {
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
-  }
+}
   
-  .info-box {
+.info-box {
     display: none;
     margin-top: 5px;
     padding: 10px;
     background: #f1f1f1;
     border: 1px solid #ccc;
-  }
+}
+
+.content-box {
+    border: 2px solid black;
+    border-radius: 20px black;
+    box-shadow: 0px 3px 3px 0px black;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.content-box > ul {
+    padding-left: 15px;
+}
 
 /* Responsive styles */
 @media (max-width: 431px) {
