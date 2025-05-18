@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>A|K</title>
+</head>
+<body>
+    <header>
+        <div class="logo">A|K</div>
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <button class="dropdown-btn">Homepage</button>
+                <div class="dropdown-content">
+                    <a href="#" data-section="homepage-subtopic">Introduction</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn">Legal Structures</button>
+                <div class="dropdown-content">
+                    <a href="#" data-section="legal-structure-subtopic">Introduction</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn">Management</button>
+                <div class="dropdown-content">
+                    <a href="#" data-section="management-subtopic">Introduction</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn">Financial</button>
+                <div class="dropdown-content">
+                    <a href="#" data-section="financial-subtopic">Introduction</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn">Taxation</button>
+                <div class="dropdown-content">
+                    <a href="#" data-section="taxation-subtopic">Introduction</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn">Resources</button>
+                <div class="dropdown-content">
+                    <a href="#" data-section="resources-subtopic">Introduction</a>
+                </div>
+            </div>
+        </div>
+        <div class="hamburger">☰</div>
+    </header>
+    
+    <div class="content-container">
+        <!-- Sidebar - visible in mobile mode -->
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <button class="sidebar-btn" data-category="homepage">Homepage</button>
+                <div class="sidebar-dropdown" id="homepage-dropdown">
+                    <a href="#" data-section="homepage-subtopic">Introduction</a>
+                </div>
+
+                <button class="sidebar-btn" data-category="legal-structure">Legal Structure</button>
+                <div class="sidebar-dropdown" id="legal-structure-dropdown">
+                    <a href="#" data-section="legal-structure-subtopic">Introduction</a>
+                    <a href="#" data-section="legal-structure-subtopic" data-anchor="sole-traders">Sole Traders</a>
+                </div>
+
+                <button class="sidebar-btn" data-category="management">Management</button>
+                <div class="sidebar-dropdown" id="management-dropdown">
+                    <a href="#" data-section="management-subtopic">Introduction</a>
+                </div>
+                
+                <button class="sidebar-btn" data-category="financial">Financial</button>
+                <div class="sidebar-dropdown" id="financial-dropdown">
+                    <a href="#" data-section="financial-subtopic">Introduction</a>
+                </div>
+                
+                <button class="sidebar-btn" data-category="taxation">Taxation</button>
+                <div class="sidebar-dropdown" id="taxation-dropdown">
+                    <a href="#" data-section="taxation-subtopic">Introduction</a>
+                </div>
+                
+                <button class="sidebar-btn" data-category="resources">Resources</button>
+                <div class="sidebar-dropdown" id="resources-dropdown">
+                    <a href="#" data-section="resources-subtopic">Introduction</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main content area -->
+        <div class="main-content">
+            <div class="content-section active" id="homepage-subtopic">
+                <div class="content-box">
+                    <h1>Welcome to A|K</h1>
+                    <br>
+                    <p>Here we cover everything Accounting, including managment, financial and taxation (more to come later!). We'll break into sub-topics of each, including variance analysis and budgeting for management, financial statements and bookkeeping for financial, along with self assessment for individuals and corporation tax for companies in regards to taxation.</p>
+                    <br>
+                    <p>To give the best experience while on our site, we would encourage that you view our <b>Legal Structures</b> page first, as this is the anchor we use for all of our topics and sub-topics. We'll be using the legal structures of business to curate how we deliver management, financial, and taxation, so understanding these are important as we progress.</p>
+                </div>
+            </div>
+
+            <div class="content-section" id="legal-structure-subtopic">
+                <div class="content-box">
+                    <h1>Legal Structures</h1>
+                    <br>
+                    <p>Before we explore accounting in depth, it's important to understand that the type of business structure shapes almost every part of the accounting process - from how profits are calculated and taxed, to who has reporting obligations, and even how decisions are made.</p>
+                    <br>
+                    <p>We're going to cover the most common forms of businesses in the UK, and those are;</p>
+                    <br>
+                    <ul>
+                        <li>Sole-Trader</li>
+                        <li>Partnerships</li>
+                        <li>Private Limited Company (Ltd)</li>
+                        <li>Public Limited Company (Plc)</li>
+                    </ul>
+                    <br>
+                    <p><b>Note:</b> Partnerships are comprised of Ordinary, Limited, and Limited Liability.</p>
+                    <br>
+                    <p>These aren't just legal labels - they define the responsibilities of owners, the extent of liability, the tax rules applied, and the kind of financial statements prepared.</p>
+                    <br>
+                    <p>Throughout this website, you'll notice that accounting topics - whether in management, financial, or taxation - are explained with reference to these business types. This gives each concept a practical footing and prepares you to apply your knowledge in the real world, whether you're sitting an exam, or advising a client.</p>
+                </div>
+                <div class="content-box">
+                    <h1 id="sole-traders">Sole Traders</h1>
+                    <br>
+                    <p>In the UK, a sole trader is the simplest and most common business structure, where the business is owned by one person. From a legal view, the business and the individual owning it, are a single entity (they are one in the same). This means that there are; <u>Legal and Accounting</u>, <u>Personal Liability</u>, <u>Financial Reporting Standards</u>, and <u>Taxation</u>, that are implicatied for the business owner personally (again, they are one, not separate).</p>
+                    <br>
+                    <h3>Legal and Accounting</h3>
+                    <br>
+                    <p>The taxable profits of a sole trader are taxed as personal income for the owner of the business, this is where they will pay Income Tax and National Insurance Contributions – similar to that of an employee. <span class="info-wrapper">
+                        <span class="info-button" onclick="toggleInfo('info1')">i</span>
+                    </span></p>
+                    <div id="info1" class="info-box">Taxable profits are calculated by reviewing the business's incomes and expenses from Revenue down to Accounting Profit (as shown in the Income Statement), focusing only on those amounts that are taxable. It’s this taxable profit that Income Tax and National Insurance Contributions are based on. (Capital Allowances are subtracted from this in substitute for depreciation)</div>
+                    <br>
+                    <h3>Extent of Personal Liability</h3>
+                    <br>
+                    <p>Due to sole traders and their owners being viewed as one by the law, not only is their income regarded as personal, as are their liabilities; meaning, all liabilities (creditors – suppliers, banks, customers), are the business owner’s responsibility. This opens them up to lawsuits regarding the seizure of personal assets (property, savings, vehicles etc) for repaying back money owed to creditors. <span class="info-wrapper">
+                        <span class="info-button" onclick="toggleInfo('info2')">i</span>
+                    </span></p>
+                    <div id="info2" class="info-box">In other words, sole traders have no legal protection from debts and losses the business incurs, and should that happen, the business owners personal assets are “up for grabs”.</div>
+                    <br>
+                    <h3>Financial Reporting Standards</h3>
+                    <br>
+                    <p></p>
+                    <br>
+                    <br>
+                    <h3>Taxation</h3>
+                    <br>
+                    <p></p>
+                    <br>
+                </div>
+            </div>
+            
+            <div class="content-section" id="management-subtopic">
+                <div class="content-box">
+                    <h1>Management Accounting</h1>
+                    <br>
+                    <p>This is the content for the Management sub-topic.</p>
+                </div>
+            </div>
+            
+            <div class="content-section" id="financial-subtopic">
+                <div class="content-box">
+                    <h1>Financial Accounting</h1>
+                    <br>
+                    <p>This is the content for the Financial sub-topic.</p>
+                </div>
+            </div>
+            
+            <div class="content-section" id="taxation-subtopic">
+                <div class="content-box">
+                    <h1>Taxation</h1>
+                    <br>
+                    <p>This is the content for the Taxation sub-topic.</p>
+                </div>
+            </div>
+            
+            <div class="content-section" id="resources-subtopic">
+                <div class="content-box">
+                    <h1>Resources</h1>
+                    <br>
+                    <p>This is the content for the Resources sub-topic.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
