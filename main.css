@@ -3,7 +3,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    font-size: medium;
+}
+
+h1 {
+    font-size: 23px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 15px;
+}
+
+ul {
+    font-size: 15px;
 }
 
 body {
