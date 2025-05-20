@@ -21,6 +21,18 @@ ul {
     font-size: 15px;
 }
 
+table {
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    padding: 4px;
+}
+
 body {
     min-height: 100vh;
     display: flex;
