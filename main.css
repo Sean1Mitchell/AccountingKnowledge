@@ -6,7 +6,7 @@
 }
 
 h1 {
-    font-size: 23px;
+    font-size: 19px;
 }
 
 h2 {
@@ -125,15 +125,16 @@ header {
     background-color: #34495e;
     transition: width 0.3s ease;
     overflow: hidden;
+    overflow-y: auto;
     flex-shrink: 0;
 }
 
 .sidebar.active {
-    width: 150px;
+    width: 320px;
 }
 
 .sidebar-content {
-    width: 150px; /* Fixed width that gets revealed */
+    width: 320px; /* Fixed width that gets revealed */
     padding-top: 20px;
 }
 
