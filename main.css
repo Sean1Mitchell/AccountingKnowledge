@@ -126,6 +126,7 @@ header {
 /* Sidebar styles */
 .sidebar {
     width: 0;
+    max-height: 100vh;
     background-color: #34495e;
     transition: width 0.3s ease;
     overflow: hidden;
@@ -176,6 +177,10 @@ header {
 
 .sidebar-dropdown a:hover {
     background-color: #3d5871;
+}
+
+body.sidebar-open {
+    overflow: hidden;
 }
 
 /* Main content */
