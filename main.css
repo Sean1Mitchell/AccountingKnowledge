@@ -136,12 +136,12 @@ header {
 
 .sidebar.active {
     width: 320px;
-    height: auto;
 }
 
 .sidebar-content {
     width: 320px; /* Fixed width that gets revealed */
     padding-top: 20px;
+    height: 1000px;
 }
 
 .sidebar-btn {
