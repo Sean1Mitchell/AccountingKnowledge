@@ -136,6 +136,7 @@ header {
 
 .sidebar.active {
     width: 320px;
+    height: auto;
 }
 
 .sidebar-content {
