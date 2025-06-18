@@ -184,6 +184,10 @@ body.sidebar-open {
     overflow: hidden;
 }
 
+h1[id] {
+    scroll-margin-top: 83px;
+}
+
 /* Main content */
 .main-content {
     flex: 1;
