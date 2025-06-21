@@ -21,8 +21,28 @@ p {
     font-size: 15px;
 }
 
+a {
+    text-decoration: none;
+}
+
+a [id] {
+    scroll-margin-top: 83px;
+}
+
+p [id] {
+    scroll-margin-top: 100px;
+}
+
+h2 [id] {
+    scroll-margin-top: 83px;
+}
+
 ul {
     font-size: 15px;
+}
+
+li {
+    margin-bottom: 5px;
 }
 
 table {
