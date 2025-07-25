@@ -2,7 +2,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Tinos;
+}
+img {
+    width: 500px;
+    height: 300px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: auto;
+    height: auto;
+    max-width: 95vw;
+    max-height: 95vh;
+    object-fit: contain;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: blue;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.modal.show {
+    display: flex;
 }
 
 h1 {
@@ -33,12 +73,68 @@ p [id] {
     scroll-margin-top: 100px;
 }
 
+li [a] {
+    scroll-margin-top: 100px;
+}
+
 h2 [id] {
     scroll-margin-top: 83px;
 }
 
 ul {
     font-size: 15px;
+}
+
+#noncurrentassets {
+    scroll-margin-top: 75px;
+}
+
+#currentassets {
+    scroll-margin-top: 75px;
+}
+
+#noncurrentliabilities {
+    scroll-margin-top: 75px;
+}
+
+#currentliabilities {
+    scroll-margin-top: 75px;
+}
+
+#tangibleassets {
+    scroll-margin-top: 75px;
+}
+
+#intangibleassets {
+    scroll-margin-top: 75px;
+}
+
+#longterminvestments {
+    scroll-margin-top: 75px;
+}
+
+#inventory {
+    scroll-margin-top: 75px;
+}
+
+#tradeandotherreceivables {
+    scroll-margin-top: 75px;
+}
+
+#otherreceivables {
+    scroll-margin-top: 75px;
+}
+
+#cashandequivalents {
+    scroll-margin-top: 75px;
+}
+
+#investments {
+    scroll-margin-top: 75px;
+}
+
+#bankoverdraft {
+    scroll-margin-top: 75px;
 }
 
 li {
@@ -269,9 +365,14 @@ h1[id] {
 }
 
 /* Responsive styles */
-@media (max-width: 431px) {
+@media (max-width: 820px) {
     .main-content {
         padding: 15px;
+    }
+
+    img {
+        height: 200px;
+        width: 300px;
     }
 
     .dropdown-container {
@@ -328,7 +429,7 @@ h1[id] {
     }
 }
 
-@media (min-width: 432px) {
+@media (min-width: 820px) {
     .sidebar.active + .main-content {
         margin-left: 150px; /* Push main content to the right */
     }
